@@ -1,13 +1,17 @@
-public class Main
-{
-    public static void main(String args[])
-    {
-        AnimalFactory factory = new AnimalFactory();
+public class Main {
 
-        Animal animal1 = factory.createAnimal("DOG");
-        animal1.sound();
+    public static void main(String[] args) {
 
-        Animal animal2 = factory.createAnimal("CAT");
-        animal2.sound();
+        DocumentFactory wordFactory = new WordFactory();
+        DocumentFactory pdfFactory = new PdfFactory();
+        DocumentFactory excelFactory = new ExcelFactory();
+
+        Document word = wordFactory.createDocument();
+        Document pdf = pdfFactory.createDocument();
+        Document excel = excelFactory.createDocument();
+
+        word.open();
+        pdf.open();
+        excel.open();
     }
 }
