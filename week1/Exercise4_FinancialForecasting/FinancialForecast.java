@@ -1,10 +1,11 @@
-class FinancialForecast {
+public class FinancialForecast {
 
-    public static double forecast(double amount, double rate, int years) {
+    public static double futureValue(double presentValue, double growthRate, int years) {
 
-        if (years == 0)
-            return amount;
+        if (years == 0) {
+            return presentValue;
+        }
 
-        return forecast(amount * (1 + rate), rate, years - 1);
+        return futureValue(presentValue * (1 + growthRate), growthRate, years - 1);
     }
 }
