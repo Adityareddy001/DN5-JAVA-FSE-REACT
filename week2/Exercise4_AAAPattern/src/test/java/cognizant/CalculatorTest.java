@@ -1,8 +1,10 @@
-import static org.junit.Assert.assertEquals;
+package cognizant;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
 
@@ -10,26 +12,35 @@ public class CalculatorTest {
 
     @Before
     public void setUp() {
+
         calculator = new Calculator();
-        System.out.println("Setup");
+
     }
 
     @After
     public void tearDown() {
-        System.out.println("Teardown");
+
+        calculator = null;
+
     }
 
     @Test
-    public void testMultiply() {
+    public void testAddition() {
 
         // Arrange
-        int a = 5;
-        int b = 4;
+
+        int a = 10;
+
+        int b = 20;
 
         // Act
-        int result = calculator.multiply(a, b);
+
+        int result = calculator.add(a,b);
 
         // Assert
-        assertEquals(20, result);
+
+        assertEquals(30,result);
+
     }
+
 }

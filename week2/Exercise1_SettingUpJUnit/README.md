@@ -1,10 +1,9 @@
-# Exercise 1 – Setting Up JUnit
+# Exercise 1 - Setting Up JUnit
 
 This exercise demonstrates the setup of JUnit using Maven.
 
-The JUnit dependency is configured in the `week2/pom.xml` file.
+JUnit Version:
+4.13.2
 
-Dependency used:
-
-- JUnit 4.13.2
-- Maven
+Build Tool:
+Apache Maven

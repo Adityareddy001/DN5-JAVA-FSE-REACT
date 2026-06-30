@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
@@ -5,9 +7,15 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cognizant</groupId>
-    <artifactId>week2</artifactId>
-    <version>1.0</version>
+    <groupId>cognizant</groupId>
+    <artifactId>Exercise2_BasicJUnitTests</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <dependencies>
 
